@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="style2.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+
+    <header class="header">
+   
+        <a href="#" class="logo">Portfolio</a>
+          <nav class="navbar">
+           
+              <a href="index.html" style="--i:1" >Home</a>
+              <a href="about.html " style="--i:2" class="active">About</a>
+              <a href="service.html" style="--i:3">Services</a>
+              <a href="contact.html" style="--i:4">Contact</a>
+    
+          </nav>
+       </header>
+    
+    <section>
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="image.jpeg" alt="">
+                        <div class="social-media">
+                            <a href="#" style="--i:7" ><i class='bx bxl-facebook'></i></a>
+                            <a href="#" style="--i:8" ><i class='bx bxl-twitter' ></i></a>
+                            <a href="#" style="--i:9" ><i class='bx bxl-instagram-alt' ></i></a>
+                            <a href="#" style="--i:10" ><i class='bx bxl-linkedin'></i></a>
+                        </div>
+                    </div>
+                    <div class="about-col-2">
+                        <h2 class="sub-title">About Me</h2>
+                        <p> As a web developer, I'm passionate about crafting digital experiences that seamlessly blend creativity with functionality. With a keen eye for design and a knack for coding, I specialize in transforming ideas into user-friendly websites that engage and inspire. From responsive layouts to intuitive navigation, I strive to deliver tailored solutions that exceed expectations and leave a lasting impression. Let's collaborate to bring your vision to life in the digital realm. </p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('Skills')" style="--i:7">Skills</p>
+                            <p class="tab-links" onclick="opentab('Certificates')"  style="--i:8">Certificates</p>
+                            <p class="tab-links" onclick="opentab('Education')"  style="--i:9">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="Skills">
+                            <ul>
+                                <li><span>Programing Language</span><br>C++,Java,PhP,JavaScript</li>
+                                <li><span>Web Development (Basics)</span><br>html,css,js</li>
+                                <li><span>Android App Development (Basics)</span><br>java</li>
+                                <li><span>Database (Basics)</span><br>Mysql</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Certificates">
+                            <ul>
+                                <li><span>Workshop in CyberSecurity (Apr(2023))</span><br>CyberSecurity in IEEE Workshop series(NUML RWP)</li>
+                                <li><span>Internship (July-Aug(2023))</span><br>Information Security(MCS College)</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Education">
+                            <ul>
+                                <li><span>NUML University (2021-2025) Rwp Campus</span><br>Bachelor of Information Technology (6th Semester) </li>
+                                <li><span>F.G Degree College For Women (2018-2020) Rwp Cantt</span><br>Intermediate in Computer Sciences</li>
+                                <li><span>F.G Model Public School (Girls), (2016-2018) Lahore Cantt</span><br>Marticulation</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="contact.html" download class="btn">Available For Hire</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer" class="footer">
+        <div class="container">
+          <div class="copyright">
+            &copy; Copyright <strong><span>PortFolio</span></strong>. All Rights Reserved
+          </div>
+          <div class="credits">
+            Designed by <a href="https://bootstrapmade.com/">Umama</a>
+          </div>
+        </div>
+      </footer>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+    
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("actve-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+</body>
+</html>
